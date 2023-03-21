@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="my-balance">
+      <div class="balance">
+        <h1>My balance</h1>
+        <p>$921.48</p>
+      </div>
+      <img src="./images/logo.svg" alt="logo"/>
+
+    </div>
+
+    <div class="spending-7-last-days">
+
+      <h1>Spending - Last 7 days</h1>
+
+      <div class="graphic-spending">
+        <div class="graphic-day">
+          <div class="day-amount-section">
+            <div class="day-amount" id="bar-monday-amount">$17.45</div>
+          </div>
+          
+          <div class="bar-day" id="bar-monday"></div>
+          <p class="day-name">mon</p>
+        </div>
+
+        <div class="graphic-day">
+          <div class="day-amount-section">
+            <div class="day-amount" id="bar-tuesday-amount">$34.91</div>
+          </div>
+
+          <div class="bar-day" id="bar-tuesday"></div>
+          <p class="day-name">tue</p>
+        </div>
+
+        <div class="graphic-day">
+          <div class="day-amount-section">
+            <div class="day-amount" id="bar-wednesday-amount">$52.36</div>
+          </div>
+          
+          <div class="bar-day" id="bar-wednesday"></div>
+          <p class="day-name">wed</p>
+        </div>
+
+        <div class="graphic-day">
+          <div class="day-amount-section">
+            <div class="day-amount" id="bar-thursday-amount">$31.07</div>
+          </div>
+          
+          <div class="bar-day" id="bar-thursday"></div>
+          <p class="day-name">thu</p>
+        </div>
+
+        <div class="graphic-day">
+          <div class="day-amount-section">
+            <div class="day-amount" id="bar-friday-amount">$</div>
+          </div>
+          <div class="bar-day" id="bar-friday"></div>
+          <p class="day-name">fri</p>
+        </div>
+
+        <div class="graphic-day">
+          <div class="day-amount-section">
+            <div class="day-amount" id="bar-saturday-amount">$</div>
+          </div>
+          
+          <div class="bar-day" id="bar-saturday"></div>
+          <p class="day-name">sat</p>
+        </div>
+
+        <div class="graphic-day">
+          <div class="day-amount-section">
+            <div class="day-amount" id="bar-sunday-amount">$</div>
+          </div>
+          
+          <div class="bar-day" id="bar-sunday"></div>
+          <p class="day-name">sun</p>
+        </div>
+      </div>
+
+      <div class="total-this-month">
+        <div class="total-month-container">
+          <h1>Total this month</h1>
+          <p id="total-month">$478.33</p>
+        </div>
+
+        <div class="variation-spending">
+          <p>+2.4%</p>
+          <h1>from last month</h1>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">FireFrozen</a>.
+  </footer>
+
+  <script src ="./script.js"></script>
+
+</body>
+</html>
